@@ -12,10 +12,10 @@ app.get("/", (req, res) => {
 
 // Rota de listagem de produtos
 app.get("/produtos", (req, res) => {
-    res.json({
-        mensagem: "Lista de Produtos!",
-        produtos: [] // aqui futuramente você pode retornar um array real
-    });
+    res.send(
+        "<h1> Lista de Produtos! </h1>"
+        
+    );
 });
 
 // Rota de consulta com parâmetro
